@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #1d2951;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;              /* ✅ Keeps left & right side by side */
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side (image) */
+.login-left {
+  flex: 1;                    /* Takes half space */
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-left img {
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Right side (form) */
+.login-right {
+  flex: 1;                    /* Takes other half */
+  padding: 40px;
+}
+
+.login-right h2 {
+  margin-bottom: 10px;
+  color: #1d2951;
+}
+
+.login-right p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  border-color: #1d2951;
+  outline: none;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember label {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #444;
+}
+
+.forgot {
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #1d2951;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  padding: 12px;
+  background: #1d2951;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background: #132042;
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.signup-text a {
+  color: #1d2951;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
